@@ -30,4 +30,34 @@ var ruoka = randomLista[2][1];
 console.log(ruoka);
 console.log(randomLista[4].merkki);
 */
-//listan metodit JS OSA7 8:00 youtube
+//listan metodit JS OSA7 9:08 youtube
+/*var kauppaLista = ["maito", "voi", "kerma"];
+//lisää listan loppuun
+kauppaLista.push("banaani", "juusto");
+console.log(kauppaLista);
+//lisää listan alkuun
+kauppaLista.unshift("omena");
+console.log(kauppaLista);
+//listasta poistaminen lopusta
+kauppaLista.pop();
+console.log(kauppaLista);
+//poistaminen listan alusta
+kauppaLista.shift();
+console.log(kauppaLista);
+*/
+//teksti ja lista
+/*var teksti = "Hurraa";
+console.log(teksti[3]);
+var listaTeksti = "Maria, Saara, Eevi";
+var uusiLista = listaTeksti.split(",");
+console.log(uusiLista);
+*/
+/*
+var marvelLista = ["ironman", "thor", "spiderman", "captain america", "deadpool"];
+console.log(marvelLista);
+marvelLista.push("black panther", "wolverine");
+console.log(marvelLista);
+marvelLista.splice(1, 3);
+console.log(marvelLista);
+*/
+//tutki ja etsi netistä mitä seuraavat metodit tekevät listalle join, concat, slice, reverse, sort, splice.
