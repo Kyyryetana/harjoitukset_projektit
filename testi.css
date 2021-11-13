@@ -1,3 +1,17 @@
+.testi {
+  text-align: center;
+  padding-top: 20px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+#button {
+  width: 100px;
+  height: 30px;
+  background-color: orange;
+  border-radius: 100%;
+  margin-left: 20px;
+}
 body {
-  
+  background-color: gray;
 }
