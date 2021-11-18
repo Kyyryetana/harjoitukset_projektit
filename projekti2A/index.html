@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="projekti2a.css">
+    <script src="projekti2a.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>ArvaaMitäVaan</title>
+  </head>
+    <body>
+      <div id="sisalto">
+        <header>
+          <h1 class="keskitaTxt1">Tervetuloa pelaamaan ArvaaMitäVaan peliä!</h1>
+          <h3 class="keskitaTxt1">Alla näet 5 kysymystä jotka tarvitsevat itselleen oikean vastauksen</h3>
+        </header>
+      </div>
+      <section>
+        <div id="tulokset"></div>
+        <form name="kyselyLomake" onsubmit="return lahetaVastaukset()">
+          <h3>1. Kysymys</h3>
+          <input type="radio" name="k1" value="a" id="k1a">a. <br>
+          <input type="radio" name="k1" value="b" id="k1b">b. <br>
+          <input type="radio" name="k1" value="c" id="k1c">c. <br>
+          <input type="radio" name="k1" value="d" id="k1d">d.
+          <br><br>
+          <h3>2. Kysymys</h3>
+          <input type="radio" name="k2" value="a" id="k1a">a. Kyllä <br>
+          <input type="radio" name="k2" value="b" id="k1b">b. Ei
+          <br><br>
+          <h3>3. Kysymys</h3>
+          <input type="radio" name="k3" value="a" id="k1a">a. <br>
+          <input type="radio" name="k3" value="b" id="k1b">b. <br>
+          <input type="radio" name="k3" value="c" id="k1c">c. <br>
+          <input type="radio" name="k3" value="d" id="k1d">d.
+          <br><br>
+          <h3>4. Kysymys</h3>
+          <input type="radio" name="k4" value="a" id="k1a">a. <br>
+          <input type="radio" name="k4" value="b" id="k1b">b. <br>
+          <input type="radio" name="k4" value="c" id="k1c">c. <br>
+          <input type="radio" name="k4" value="d" id="k1d">d.
+          <br><br>
+          <h3>5. Kysymys</h3>
+          <input type="radio" name="k5" value="a" id="k1a">a. <br>
+          <input type="radio" name="k5" value="b" id="k1b">b. <br>
+          <input type="radio" name="k5" value="c" id="k1c">c. <br>
+          <input type="radio" name="k5" value="d" id="k1d">d.
+          <br><br>
+          <input type="submit" name="" value="Lähetä vastaukset">
+        </form>
+      </section>
+      <footer>
+        <p class="keskitaTxt2">Copyright &copy; Niko Alander 2021, kaikki oikeudet pidätetään</p>
+      </footer>
+    </body>
+</html>
