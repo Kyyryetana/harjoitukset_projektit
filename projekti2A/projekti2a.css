@@ -2,19 +2,17 @@ body {
   background-image: url(question.png);
 }
 body div {
-  background-color: orange;;
-  opacity: 0.9;
+  background-color: orange;
 }
 body section {
   background-color: orange;;
-  opacity: 0.9;
-  margin: 25px;
+  margin-left: 100px;
+  margin-right: 100px;
   padding: 30px;
   width: auto;
 }
 body footer {
   background-color: orange;
-  opacity: 0.9;
   margin: 25px;
   padding: 1px;
 }
