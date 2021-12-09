@@ -5,7 +5,11 @@ var index = 0;
 
 function lisaa(luku)
 {
+<<<<<<< HEAD
   numero + numero = luku;
+=======
+  numero+= luku;
+>>>>>>> 7bd3fe8f57675a374fa496c5c72f0fe82671eb7d
   document.getElementById('tulos').innerHTML = numero;
 }
 

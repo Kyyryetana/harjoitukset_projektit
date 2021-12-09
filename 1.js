@@ -10,11 +10,12 @@
 //   }
 // }
 
-function javaScript() {
-  var kertoma = 1;
-  luku = parseInt(document.getElementById('luku').value);
-  for (var i = 1; i <= luku; i++) {
-    kertoma = kertoma * i;
-  }
-  document.getElementById('vastaus').innerHTML = "Luvun " + luku + " kertoma on " + kertoma;
-}
+// function javaScript() {
+//   var kertoma = 1;
+//   luku = parseInt(document.getElementById('luku').value);
+//   for (var i = 1; i <= luku; i++) {
+//     kertoma = kertoma * i;
+//   }
+//   document.getElementById('vastaus').innerHTML = "Luvun " + luku + " kertoma on " + kertoma;
+// }
+//
