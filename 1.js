@@ -1,21 +1,25 @@
-// function javaScript() {
-//   ika = parseInt(document.getElementById('ika').value);
-//   var kouluikainen_alaraja = 7;
-//   var kouluikainen_ylaraja = 16;
-//   if (ika >= kouluikainen_alaraja && ika <= kouluikainen_ylaraja) {
-//     document.getElementById('vastaus').innerHTML = "Olet kouluikäinen";
-//   }
-//   else {
-//     document.getElementById('vastaus').innerHTML = "Et ole kouluikäinen!";
-//   }
-// }
+const kortit = document.querySelectorAll('.kortti');
 
-// function javaScript() {
-//   var kertoma = 1;
-//   luku = parseInt(document.getElementById('luku').value);
-//   for (var i = 1; i <= luku; i++) {
-//     kertoma = kertoma * i;
-//   }
-//   document.getElementById('vastaus').innerHTML = "Luvun " + luku + " kertoma on " + kertoma;
-// }
+function flipKortti(){
+  this.classList.toggle('flip');
+}
+
+(function shuffle(){
+  kortit.forEach(kortti => {
+    let random = Math.floor(Math.random() * 16);
+    kortti.style.order = random;
+  });
+})();
+
+kortit.forEach(kortti => kortti.addEventListener('click', flipKortti));
 //
+function parit() {
+  var eka = first.flip[0];
+  var toka = second.flip[1];
+  if (eka === toka) {
+    alert("parit");
+  } else {
+    alert("ei parit");
+  }
+
+}
