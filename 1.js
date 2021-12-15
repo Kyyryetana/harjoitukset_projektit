@@ -1,21 +1,40 @@
-// function javaScript() {
-//   ika = parseInt(document.getElementById('ika').value);
-//   var kouluikainen_alaraja = 7;
-//   var kouluikainen_ylaraja = 16;
-//   if (ika >= kouluikainen_alaraja && ika <= kouluikainen_ylaraja) {
-//     document.getElementById('vastaus').innerHTML = "Olet kouluikäinen";
-//   }
-//   else {
-//     document.getElementById('vastaus').innerHTML = "Et ole kouluikäinen!";
-//   }
-// }
+const kortit = document.querySelectorAll('.kortti');
+let hasFlippedCard = false;
+let firstCard, secondCard;
 
-// function javaScript() {
-//   var kertoma = 1;
-//   luku = parseInt(document.getElementById('luku').value);
-//   for (var i = 1; i <= luku; i++) {
-//     kertoma = kertoma * i;
-//   }
-//   document.getElementById('vastaus').innerHTML = "Luvun " + luku + " kertoma on " + kertoma;
-// }
+function flipKortti(){
+  this.classList.toggle('flip');
+
+  if (!hasFlippedCard) {
+    //ensimmäinen klikkaus
+    hasFlippedCard = true;
+    firstCard = this;
+  } else {
+    //toinen klikkaus
+    hasFlippedCard = false;
+    secondCard = this;
+
+    //onko parit?
+    if (firstCard.dataset.framework === secondCard.dataset.framework) {
+      //on pari!
+      firstCard.removeEventListener('click', flipKortti);
+      secondCard.removeEventListener('click', flipKortti);
+    } else {
+      //ei pari
+      setTimeout(() => {
+        firstCard.classList.remove('flip');
+        secondCard.classList.remove('flip');
+      }, 1500);
+    }
+  }
+}
+
+(function shuffle(){
+  kortit.forEach(kortti => {
+    let random = Math.floor(Math.random() * 16);
+    kortti.style.order = random;
+  });
+})();
+
+kortit.forEach(kortti => kortti.addEventListener('click', flipKortti));
 //
