@@ -37,4 +37,3 @@ function flipKortti(){
 })();
 
 kortit.forEach(kortti => kortti.addEventListener('click', flipKortti));
-//
