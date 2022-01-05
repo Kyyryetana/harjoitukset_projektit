@@ -1,3 +1,11 @@
+let laskuri = document.getElementById('laskuri');
+let laske = 0;
+
 function lisaa() {
-  console.log("painoit nappulaa");
+  laske += 1
+  laskuri.innerText = laske
+};
+
+function tallenna() {
+
 }
