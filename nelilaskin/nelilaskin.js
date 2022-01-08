@@ -1,50 +1,35 @@
-var numero = '';
-var luku = '';
-var taulu = ['+','-','*','/','%'];
-var index = 0;
-
-function lisaa(luku)
-{
-<<<<<<< HEAD
-  numero + numero = luku;
-=======
-  numero+= luku;
->>>>>>> 7bd3fe8f57675a374fa496c5c72f0fe82671eb7d
-  document.getElementById('tulos').innerHTML = numero;
-}
-
-function laske()
-{
-  var indeksi, jono;
-  if(numero.search("%") > 0)
-  {
-    jono = numero.split('%');
-    numero = jono[0] * jono[1] / 100;
-    document.getElementById('tulos').innerHTML = numero;
-  }
-  else{
-    document.getElementById('tulos').innerHTML = eval(numero);
-    numero = eval(numero);
-  }
-}
-function tyhjenna()
-{
-  numero = '';
-  document.getElementById('tulos').innerHTML = numero;
-}
-
-function poistaViimeisin()
-{
-  for(var i = 0; i < numero.length; i++)
-  {
-    for(var j = 0; j < taulu.length; j++)
-    {
-      if(numero[i] == taulu[j])
-      {
-        index = i;
-      }
-    }
-  }
-  numero = numero.substr(0, index);
-  document.getElementById('tulos').innerHTML = numero;
-}
+//harjoitus1
+// let firstName = 'Niko';
+// let lastName = 'Alander';
+// let fullName = firstName + " " + lastName;
+// console.log(fullName);
+//harjoitus2
+// let name = 'Linda';
+// let greeting = 'Hi there';
+// let fullGreeting = greeting + "," + " " + name + "!";
+// console.log(fullGreeting);
+//harjoitus3
+// let myPoints = 3
+//
+// function add3Points() {
+//   myPoints += 3;
+// }
+//
+// function remove1Point() {
+//   myPoints -= 1;
+// }
+//
+// add3Points()
+// add3Points()
+// add3Points()
+// remove1Point()
+// remove1Point()
+// console.log(myPoints)
+//harjoitus4
+// console.log("2" + 2) // "22"
+// console.log(11 + 7) // 18
+// console.log(6 + "5") // "65"
+// console.log("My points: " + 5 + 9) // "My points: 59"
+// console.log(2 + 2) // 4
+// console.log("11" + "14") // "1114"
+//harjoitus5
