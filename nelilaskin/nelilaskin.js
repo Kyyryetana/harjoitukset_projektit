@@ -33,3 +33,8 @@
 // console.log(2 + 2) // 4
 // console.log("11" + "14") // "1114"
 //harjoitus5
+// let wrong = document.getElementById('error');
+// function buy() {
+//   wrong.innerText = "Something went wrong, please try again";
+// }
+//harjoitus6
