@@ -1,21 +1,46 @@
-let num1 = 8;
-let num2 = 2;
-let sumEl = document.getElementById('sum-el');
-document.getElementById('num1-el').textContent = num1;
-document.getElementById('num2-el').textContent = num2;
-function add() {
-  let result = num1 + num2;
-  sumEl.textContent = "Sum: " + result;
+var numero = '';
+var luku = '';
+var taulu = ['+','-','*','/','%'];
+var index = 0;
+
+function lisaa(luku)
+{
+  numero+= luku;
+  document.getElementById('tulos').innerHTML = numero;
 }
-function subtract() {
-  let result = num1 - num2;
-  sumEl.textContent = "Sum: " + result;
+
+function laske()
+{
+  var indeksi, jono;
+  if(numero.search("%") > 0)
+  {
+    jono = numero.split('%');
+    numero = jono[0] * jono[1] / 100;
+    document.getElementById('tulos').innerHTML = numero;
+  }
+  else{
+    document.getElementById('tulos').innerHTML = eval(numero);
+    numero = eval(numero);
+  }
 }
-function divide() {
-  let result = num1 / num2;
-  sumEl.textContent = "Sum: " + result;
+function tyhjenna()
+{
+  numero = '';
+  document.getElementById('tulos').innerHTML = numero;
 }
-function multiply() {
-  let result = num1 * num2;
-  sumEl.textContent = "Sum: " + result;
+
+function poistaViimeisin()
+{
+  for(var i = 0; i < numero.length; i++)
+  {
+    for(var j = 0; j < taulu.length; j++)
+    {
+      if(numero[i] == taulu[j])
+      {
+        index = i;
+      }
+    }
+  }
+  numero = numero.substr(0, index);
+  document.getElementById('tulos').innerHTML = numero;
 }
