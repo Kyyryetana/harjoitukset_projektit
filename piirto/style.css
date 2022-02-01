@@ -1,0 +1,48 @@
+#canvas {
+    width: 90%;
+    height: 600px;
+    border:solid 5px black;
+    margin-bottom: 20px;
+}
+
+#toolBar {
+    
+}
+
+.buttons {
+    background-color: lightgray;
+    width: 100px;
+    height: 40px;
+    font-weight: bold;
+    border: solid 3px black;
+    margin-left: 10px;
+
+}
+
+.color {
+    margin-left: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border:black solid 3px;
+}
+
+#red {
+    background-color: red;
+}
+
+#green {
+    background-color: green;
+}
+
+#blue {
+    background-color: blue;
+}
+
+#black {
+    background-color: black;
+}
+
+#slider {
+    margin-left: 20px;
+}
