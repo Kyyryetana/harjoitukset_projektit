@@ -1,27 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap" rel="stylesheet">
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Piirrä</title>
-</head>
-<body>
+    <link rel="stylesheet" href="style.css">
+    <title>Piirto-ohjelma</title>
+  </head>
+  <body>
+    <canvas id="canvas" width="1300" height="650"></canvas>
     <section>
-        <div id="canvas">
+      <button type="button" onclick="poista()" id="poistaKaikki">POISTA KAIKKI</button>
+      <button type="button" id="kumoa">KUMOA</button>
+      <button type="button" id="palauta">PALAUTA</button>
 
-        </div>
-        <div id="toolBar">
-            <button class="buttons" id="erase">Erase</button>
-            <button class="buttons" id="clear">Clear</button>
-            <button class="color" id="red"></button>
-            <button class="color" id="green"></button>
-            <button class="color" id="blue"></button>
-            <button class="color" id="black"></button>
-            <input id="slider" type="range" value="">
-        </div>
+      <div onclick="changeColor('#F20D0D')" id="punainen"></div>
+      <div onclick="changeColor('#42DE0C')" id="vihreä"></div>
+      <div onclick="changeColor('#2B98FF')" id="sininen"></div>
+      <div onclick="changeColor('#000')" id="musta"></div>
+
+      <input onchange="changeWidth(this.value)" id="kynänPaksuus" type="range" min="1" max="20" value="3">
     </section>
-</body>
+    <script src="script.js"></script> <!-- ÄLÄ SIIRRÄ!! -->
+  </body>
 </html>
